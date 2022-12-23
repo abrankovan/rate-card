@@ -1,0 +1,101 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    padding: 300px;
+
+
+}
+.container {
+    margin: 10px;
+    display: table-cell;
+}
+
+.text-box {
+    background-color:hsl(213, 19%, 18%);
+    display: flex;
+    display: flow-root;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 180px;
+    width: 330px;
+    padding: 25px;
+}
+
+.text {
+    padding-top: 10px;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: unset;
+}
+
+.paragraf {
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+
+
+
+}
+.container1 {
+    display: grid;
+    padding-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5px;
+    padding: 10px;
+}
+
+.singleButton {
+    color: hsl(217, 12%, 63%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #2e3742;
+    transition: 0.3s all;
+    cursor: pointer;
+
+}
+.singleButton:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit {
+    border-radius: 50px;
+    border: none;
+    padding: 10px 120px 10px 110px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.submit:hover{
+    background-color: aliceblue;
+    color: hsl(25, 97%, 53%); 
+}
+
+.star {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #2e3742;
+
+}
