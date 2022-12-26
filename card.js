@@ -1,9 +1,13 @@
 
+let rateNumber='';
 
 function changeText(message) {
-    
+     rateNumber=message; 
 }
 
 function submit(){
-    showMessage("You selected", message, "from 5");
+    submitNumber(`You selected ${rateNumber} from 5`);
+}
+function changeColor(button){
+    button.style.backgroungColor = "red";
 }
