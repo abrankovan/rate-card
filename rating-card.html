@@ -6,7 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-
+<title>Rate card</title>
 </head>
 <body>
 
@@ -23,24 +23,25 @@
             <h1 class="title">How did we do?</h1>
             <h5 class="paragraf">Please let us know how we did with your suport requeas. All feedback is appredicted to
                 help us improve our offering!</h5>
-                <h6>Hello world</h6>
         </div>
-        <div class="container1">
+        <div class="container-buttons">
             <div class="buttons">
-                <button id="rating" class="singleButton" onclick="onClick(1)">1</button>
+                <button id="back-color" class="singleButton" onclick="changeText(1)">1</button>
                 <button class="singleButton" onclick="changeText(2)">2</button>
                 <button class="singleButton" onclick="changeText(3)">3</button>
                 <button class="singleButton" onclick="changeText(4)">4</button>
                 <button class="singleButton" onclick="changeText(5)">5</button>
             </div>
-            <button id="rate" class="submit">SUBMIT</button>
+            <button id="rate" class="submit" onclick="submit()">SUBMIT</button>
         </div>
-        <div id="rate_div" class="container, hidden">
-            <img src="./images/illustration-thank-you.svg"/>
-            <h5 class="paragraf"></h5>
-        </div>
-        
-    </div>    
+    </div>
+</div>
+<div id="rate-div" class="container-rate, hidden">
+    <img class="thank-you-image" src="./images/illustration-thank-you.svg" />
+    <div id="rate1"></div>
+    <h5 class="title">Thank you!</h5>
+    <p class="paragraf">We appreciate you taking the time to give a rating. If you ever need more suport, don't hesitate
+        to get in touch!</p>
 </div>
 
 
@@ -48,15 +49,14 @@
 
 <script>
     let rate = document.getElementById("rate");
-    let rate_div = document.getElementById("rate_div");
+    let rate_div = document.getElementById("rate-div");
+    rate_div.style.display='none';
     rate.addEventListener('click', ()=> {
         rate_div.style.display='block';
         div1.style.display='none';
     });
-    
-
 </script>
 <script src="./card.js"></script>
-<script src="./utils.js"></script>
+<script src="./utils.js"></script> 
 </body>
 </html>
