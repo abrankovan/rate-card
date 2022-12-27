@@ -10,13 +10,14 @@ body {
 
 
 }
+
 .container {
     margin: 10px;
     display: table-cell;
 }
 
 .text-box {
-    background-color:hsl(213, 19%, 18%);
+    background-color: hsl(213, 19%, 18%);
     display: flex;
     display: flow-root;
     border-radius: 20px;
@@ -27,10 +28,19 @@ body {
 }
 
 .text {
-    padding-top: 10px;
+    padding: 0px 15px;
 }
 
 .title {
+    color: aliceblue;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: unset;
+    margin: unset;
+    padding-top: 30px;
+}
+
+.title1 {
     display: flex;
     justify-content: center;
     color: aliceblue;
@@ -42,16 +52,22 @@ body {
 }
 
 .paragraf {
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.paragraf1 {
     text-align: -webkit-center;
     color: hsl(216, 12%, 54%);
     font-weight: 400;
     line-height: 20px;
     margin-top: 10px;
     font-size: 15px;
-
-
-
 }
+
 .container1 {
     display: grid;
     padding-top: 10px;
@@ -75,7 +91,8 @@ body {
     cursor: pointer;
 
 }
-.singleButton:hover{
+
+.singleButton:hover {
     background-color: hsl(25, 97%, 53%);
 }
 
@@ -90,9 +107,10 @@ body {
     transition: 0.3s all;
     margin-left: 15px;
 }
-.submit:hover{
+
+.submit:hover {
     background-color: aliceblue;
-    color: hsl(25, 97%, 53%); 
+    color: hsl(25, 97%, 53%);
 }
 
 .star {
@@ -104,8 +122,9 @@ body {
     border-radius: 50%;
     background-color: #2e3742;
 }
+
 #rate-div {
-    background-color:hsl(213, 19%, 18%);
+    background-color: hsl(213, 19%, 18%);
     display: flex;
     display: flow-root;
     border-radius: 20px;
@@ -114,16 +133,18 @@ body {
     width: 330px;
     padding: 25px;
 }
+
 .thank-you-image {
     padding-bottom: 30px;
     padding-left: 80px;
 }
-#rate1{
+
+#rate1 {
     display: flex;
     justify-content: center;
     background-color: #2e3742;
     border-radius: 10px;
-    color: hsl(25, 97%, 53%); 
+    color: hsl(25, 97%, 53%);
     height: 30px;
     width: 200px;
     align-items: center;
